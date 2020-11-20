@@ -12,14 +12,14 @@ monogatari.action ('message').messages ({
 	}
 });
 
-// Define the notifications used in the game
+/* Define the notifications used in the game
 monogatari.action ('notification').notifications ({
 	'Welcome': {
 		title: 'Welcome',
 		body: 'This is the Monogatari VN Engine',
 		icon: ''
 	}
-});
+});*/
 
 // Define the Particles JS Configurations used in the game
 monogatari.action ('particles').particles ({
@@ -75,8 +75,8 @@ monogatari.assets ('scenes', {
 
 // Define the Characters
 monogatari.characters ({
-	'y': {
-		name: 'Yui',
+	'me': {
+		name: 'me',
 		color: '#5bcaff'
 	}
 });
@@ -85,8 +85,8 @@ monogatari.script ({
 	// The game starts here.
 	'Start': [
 		'show scene #f7f6f6 with fadeIn',
-		'show notification Welcome',
-		{
+		//'show notification Welcome',
+		/*{
 			'Input': {
 				'Text': 'What is your name?',
 				'Validation': function (input) {
@@ -109,38 +109,32 @@ monogatari.script ({
 				},
 				'Warning': 'You must enter a name!'
 			}
-		},
-		'y Hi {{player.name}} Welcome to Monogatari!',
+		},*/
+		'nvl When you come to, you struggle to situate yourself. <br> Were you in the safety of you own room, snoozing away the late morning hours of your day with nary a care in the world?',
+		'nvl Had you fallen asleep somewhere weird again?',
+		'nvl You try to move your body, but immediately wince as you feel a particularly bad kink in your neck pulse in discomfort. ',
+		'nvl Definitely the latter. Just where was it this time?',
+		'nvl You sit up, frantically rubbing away at your eyes to try and shake away the lingering wisps of sleep blurring your vision.',
+		'nvl You groan as you do so, your limbs clenching in disapproval at every tiny flex of your muscles.',
+		'nvl Forget where you passed out... what exactly had you been up to last night? You furrow your brows, trying to remember.',
+		'nvl But, despite your best efforts, the answers just won\'t come and the more you try to recall, the more frustrated you get.',
+		'nvl After a few minutes of fruitless efforts, your nostrils flare in annoyance as you take a deep breath.',
+		'nvl Why couldn\'t you remember... and just why wouldn\'t this damnable blurriness just go away!?',
+		'nvl Before you could give it anymore thought, however, you suddenly get an urge to do something.',
+		'nvl It was a base instinct crying out through every part of your body. You...',
 		{
 			'Choice': {
-				'Dialog': 'y Have you already read some documentation?',
+				
 				'Yes': {
-					'Text': 'Yes',
-					'Do': 'jump Yes'
+					'Text': 'Reach down',
+					'Do': 'jump ReachDown'
 				},
-				'No': {
-					'Text': 'No',
-					'Do': 'jump No'
-				}
 			}
 		}
 	],
 
-	'Yes': [
-		'y Thats awesome!',
-		'y Then you are ready to go ahead and create an amazing Game!',
-		'y I can’t wait to see what story you’ll tell!',
+	'ReachDown': [
+		'me bitch you thot',
 		'end'
 	],
-
-	'No': [
-
-		'y You can do it now.',
-
-		'show message Help',
-
-		'y Go ahead and create an amazing Game!',
-		'y I can’t wait to see what story you’ll tell!',
-		'end'
-	]
 });

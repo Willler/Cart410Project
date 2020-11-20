@@ -97,7 +97,9 @@ button:hover {
 
 /* Text Box styling */
 [data-component="text-box"] {
-
+	width: 80%;
+	padding: 1%;
+	align-self: center;
 }
 
 /* Character Name Style */
