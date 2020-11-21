@@ -110,7 +110,7 @@ monogatari.script ({
 				'Warning': 'You must enter a name!'
 			}
 		},*/
-		'nvl When you come to, you struggle to situate yourself. <br> Were you in the safety of you own room, snoozing away the late morning hours of your day with nary a care in the world?',
+		'nvl When you come to, you struggle to situate yourself. Were you in the safety of you own room, snoozing away the late morning hours of your day with nary a care in the world? ',
 		'nvl Had you fallen asleep somewhere weird again?',
 		'nvl You try to move your body, but immediately wince as you feel a particularly bad kink in your neck pulse in discomfort. ',
 		'nvl Definitely the latter. Just where was it this time?',
@@ -134,7 +134,7 @@ monogatari.script ({
 	],
 
 	'ReachDown': [
-		'me bitch you thot',
+		'nvl bitch you thot',
 		'end'
 	],
 });

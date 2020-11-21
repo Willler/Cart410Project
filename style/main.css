@@ -102,6 +102,15 @@ button:hover {
 	align-self: center;
 }
 
+text-box div p {
+	padding: 0.25em;
+}
+
+[data-spoke="narrator"] {
+}
+
+}
+
 /* Character Name Style */
 [data-ui="who"] {
 
