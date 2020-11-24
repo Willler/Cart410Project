@@ -44,7 +44,7 @@ div.phistory:empty {
 a {
     color: #222;
     text-decoration: none;
-    border: 0.5rem solid black;
+    border: 0.3rem solid black;
     margin: 0.5rem 1rem;
     background: white;
     padding: 0.5em;
@@ -56,18 +56,18 @@ a {
 }
 
 a:hover {
-    color: red;
-    border-color: red;
+    color: darkred;
+    border-color: darkred;
 }
 
 a:active {
-    color: red;
-    border-color: red;
+    color: darkred;
+    border-color: darkred;
 }
 
 #phistory a.visited {
-    color: red;
-    border-color: red;
+    color: darkred;
+    border-color: darkred;
 }
 
 tw-storydata {
@@ -85,31 +85,4 @@ h1 {
 }
 body {
     margin: 0;
-}
-#bg {
-  position:relative;
-  margin:0;
-  display: initial;
-}
-
-#bg img {
-    position: fixed;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-    opacity:0;
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    z-index: -10;
-    width: 101%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#bg img.opaque {
-  opacity:1;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=1);
 }
