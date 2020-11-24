@@ -91,6 +91,13 @@ a:active {
     border-color: darkred;
 }
 
+#phistory a {
+    border-bottom: 0.3rem solid black;
+}
+#phistory a:hover {
+    border-bottom: 0.3rem solid darkred;
+}
+
 #phistory a.visited {
     color: darkred;
     border-color: darkred;
@@ -111,9 +118,8 @@ h1 {
 }
 body {
     margin: 0;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Choice of Setting" tags="" position="1000,0" size="100,100">s.image = [&quot;img1&quot;,&quot;img2&quot;,&quot;img3&quot;,&quot;img4&quot;];
-
-&lt;%= window.story.passage(&quot;test&quot;).render() %&gt;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Choice of Setting" tags="" position="1000,0" size="100,100">
+&lt;%= window.story.passage(&quot;Swirl&quot;).render() %&gt;
 
 When you come to, you struggle to situate yourself. Were you in the safety of you own room, snoozing away the late morning hours of your day with nary a care in the world? Had you fallen asleep somewhere weird again? You try to move your body, but immediately wince as you feel a particularly bad kink in your neck pulse in discomfort. 
 
@@ -133,7 +139,7 @@ s.path = &quot;will&quot;;
 s.log = &quot;W&quot;;
 %&gt;
 
-&lt;%= window.story.passage(&quot;test02&quot;).render() %&gt;
+&lt;%= window.story.passage(&quot;Park&quot;).render() %&gt;
 
 You hastily crouch and plant both hands on the ground. As if by magic, your vision instantly clears and you see the vivid landscape of a city park stretching around you. It is as long as it is wide, with myriad trees framing a single path snaking through it.
 
@@ -391,6 +397,9 @@ Melissa path goes here
 
 &lt;%= window.story.passage(&quot;END&quot;).render() %&gt;</tw-passagedata><tw-passagedata pid="8" name="Trust them and press the button." tags="" position="700,700" size="100,100">&lt;% s.log = s.log + &quot;2&quot;; %&gt;
 &lt;% if (s.path == &quot;will&quot;){ %&gt;
+
+&lt;%= window.story.passage(&quot;FireWorks&quot;).render() %&gt;
+
 You decide to flip the switch and are immediately rewarded with a large rocket bursting out of the alleyway beside you and flying high overhead, exploding in a shower of colorful lights and sparks. The fireworks are a vivid crimson, their brilliance easily visible even against clear midday skies.
 
 You hear hundreds of people simultaneously gasp in awe before returning to cheering over the booming music and fanfare.
@@ -1651,6 +1660,8 @@ s.path = &quot;joe&quot;;
 s.log = &quot;J&quot;;
 %&gt;
 
+&lt;%= window.story.passage(&quot;Apoc&quot;).render() %&gt;
+
 You get a sudden, almost primal urge to look up towards the sky. Once you do, a cool, almost icy sense of lucidity rushes through your body, breaking through every clot obstructing your sense.
 
 The first sense that comes back is not vision, but smell. A torrent of putrid smells assaults your nose. It was a mixture of ash and burning flesh, something akin to that time you had seen a building on fire, but amplified a hundredfold.
@@ -1684,19 +1695,35 @@ s.path = &quot;mel&quot;;
 s.log = &quot;M&quot;;
 %&gt;
 
-[[Approach]] [[Leave]] </tw-passagedata><tw-passagedata pid="41" name="test" tags="" position="1900,100" size="100,100">&lt;style&gt;
+[[Approach]] [[Leave]] </tw-passagedata><tw-passagedata pid="41" name="Swirl" tags="" position="1900,100" size="100,100">
+
+&lt;style&gt;
 body{
     background-image: url(&quot;https://iili.io/FM4jZQ.png&quot;);
-    background-size: fixed;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	backgroud-size: 100%;
 }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="42" name="test02" tags="" position="2050,100" size="100,100">&lt;style&gt;
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="42" name="Apoc" tags="" position="2050,100" size="100,100">&lt;style&gt;
 body{
-    background-image: url(&quot;https://iili.io/FM4hwx.png&quot;);
-    background-size: fixed;
+    background-image: url(&quot;https://iili.io/FMLmZJ.png&quot;);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	backgroud-size: 100%;
+}
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="43" name="Park" tags="" position="2200,100" size="100,100">&lt;style&gt;
+body{
+    background-image: url(&quot;https://iili.io/FMQH4p.png&quot;);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	backgroud-size: 100%;
+}
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="44" name="FireWorks" tags="" position="2350,100" size="100,100">&lt;style&gt;
+body{
+    background-image: url(&quot;https://iili.io/FMQ9GR.png&quot;);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	backgroud-size: 100%;
 }
 &lt;/style&gt;</tw-passagedata></tw-storydata>
 
