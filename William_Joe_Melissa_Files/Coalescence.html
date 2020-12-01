@@ -79,6 +79,7 @@ a {
     max-width: 38%;
     vertical-align: middle;
     text-shadow: none;
+  	text-align: center;
 }
 
 a:hover {
@@ -154,14 +155,6 @@ Your question answered itself as you heard the noise getting progressively loude
 [[Approach]] [[Leave]]</tw-passagedata><tw-passagedata pid="3" name="Approach" tags="" position="983,426" size="100,100">&lt;% s.log = s.log + &quot;1&quot;; %&gt;
 &lt;% if (s.path == &quot;will&quot;){ %&gt;
 
-&lt;style&gt;
-body{
-    background-image: url(&quot;https://iili.io/FM4NnV.md.png&quot;);
-    background-size: fixed;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}
-&lt;/style&gt;
 You decide to check out what&#39;s happening. It is a beautiful day, after all. Not too hot; not too cold. Moreover, you don&#39;t even have a hangover from what you assume had been a late night of drinking. Plus, whatever it is, you can at least see where you ended up.
 
 You stand to your feet, flexing your knees. Yep, you feel great. A smile tugs at the corners of your mouth as you start walking towards the racket.
@@ -179,16 +172,7 @@ She&#39;s not the only one to notice you standing there with your mouth open eit
 You have a hard time thinking with all this noise. You... 
 
 [[Join in.]] [[Watch from afar.]]
-&lt;% } else if (s.path == &quot;joe&quot;) { %&gt; 
-
-&lt;style&gt;
-body{
-    background-image: url(&quot;https://iili.io/FM4hwx.png&quot;);
-    background-size: fixed;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}
-&lt;/style&gt;
+&lt;% } else if (s.path == &quot;joe&quot;) { %&gt;
 
 You decide to approach the person running toward you. He sees you coming closer and seems to put in even more effort to reach you. You see him call out to something and immediately hear a dog&#39;s bark in response.
 
@@ -807,7 +791,7 @@ The huntress eventually dials down again and motions for you to follow her back.
 
 You...
 
-[[Follow Her|Follow him.]] [[Try to disappear in the forest.|Try to disappear in the crowd.]]
+[[Follow her.|Follow him.]] [[Try to disappear in the forest.|Try to disappear in the crowd.]]
 
 
 &lt;%} %&gt;
@@ -907,7 +891,7 @@ You can&#39;t help but be shocked as you see the myriad screens stretching from 
 ...You can immediately tell why, too, as the screens behind them feature your mugshot with the words &quot;Anomaly 1&quot; printed in bold.
 
 &lt;% } else if (s.path == &quot;joe&quot;) { %&gt;
-As they say— In for a penny, in for a pound. The fact that this guy somehow knows you most likely means that there are others too. That meantssecurity and a place to belong; it&#39;s a far cry from the depravity painting the streets outside.
+As they say— In for a penny, in for a pound. The fact that this guy somehow knows you most likely means that there are others too. That meant security and a place to belong; it&#39;s a far cry from the depravity painting the streets outside.
 
 Sure, things would get violent. If you think about it, it&#39;s not exactly strange. You&#39;ve seen plenty of movies depicting how far removed from common sense people will get when their lives were on the line.
 
@@ -1255,6 +1239,9 @@ You...
 
 [[Accept the offer.]] [[Refuse the offer.]]</tw-passagedata><tw-passagedata pid="22" name="Sneak in." tags="" position="2408,791" size="100,100">&lt;% s.log = s.log + &quot;2&quot;; %&gt;
 &lt;% if (s.path == &quot;will&quot;){ %&gt;
+
+&lt;%= window.story.passage(&quot;Pentagon&quot;).render() %&gt;
+
 You came this far on your own, right? There is no need to suddenly start relying on others. Especially when they could just straight up steal the business card and your remaining cash.
 
 ...Maybe these past few weeks have affected you more than you&#39;d like to admit.
@@ -1290,6 +1277,9 @@ You...
 [[Do as you&#39;re told.]] [[Take matters into your own hands and demand answers.]]
 
 &lt;% } else if (s.path == &quot;joe&quot;) { %&gt;
+
+&lt;%= window.story.passage(&quot;Building&quot;).render() %&gt;
+
 You manage to slip inside the building through a broken window, keeping an eye out for any sudden movement that would betray your silent entrance. You take your gun out and keep low, hugging the walls and crouching at every corner. Soon, you start hearing some voices and decide to eavesdrop from afar.
 
 The conversation seems to be between the man that was chasing you and some others. You can&#39;t exactly make out how many.
@@ -1317,6 +1307,9 @@ You...
 [[Accept responsibility|Do as you&#39;re told.]] [[Take Matters into your own hands.|Take matters into your own hands and demand answers.]]
 
 &lt;% } else { %&gt; 
+
+&lt;%= window.story.passage(&quot;Cabin&quot;).render() %&gt;
+
 About a week of solitude and almost dying from starvation and mushroom poisoning has left you feeling a little bit antisocial, so you quickly decide to sneak into the small cabin.
 
 You tiptoe up to the building, taking care to stick to the shadows as much as you can. Once you get there, you look around and once satisfied, you slip inside. The door is unlocked and already slightly ajar, so you have no problem going in.
@@ -1341,9 +1334,7 @@ You crane your neck and see &quot;the boys&quot; all grinning at you from outsid
 
 [[Do as you&#39;re told.]] [[Take matters into your own hands and demand answers.]]
 
-
 &lt;%} %&gt;
-
 
 [[Try to run away.]]</tw-passagedata><tw-passagedata pid="23" name="Talk to someone." tags="" position="1900,800" size="100,100">&lt;% s.log = s.log + &quot;1&quot;; %&gt;
 &lt;% if (s.path == &quot;will&quot;){ %&gt;
@@ -1381,6 +1372,9 @@ But, instead of leaving you alone as you expected, the man starts trembling, tak
 You...
 
 &lt;% } else { %&gt; 
+
+&lt;%= window.story.passage(&quot;Cabin&quot;).render() %&gt;
+
 You decide to approach the person working on the field. Jogging lightly, you make your way over there and raise your voice to anounce your presence, waving your hand back and forth. You&#39;re certain you look like an absolute wreck, but you&#39;re past the point of caring.
 
 Hearing your voice, the person is startled out of their duty, planting their tool in the soil and giving you a standoffish glance. You see the scowl on his lips and your excitement dies down considerably.
@@ -1729,6 +1723,9 @@ You&#39;d need to meditate on this later, for now. You just need to run.
 
 &lt;%= window.story.passage(&quot;END&quot;).render() %&gt;</tw-passagedata><tw-passagedata pid="31" name="Accept the offer." tags="" position="2800,1000" size="100,100">&lt;% s.log = s.log + &quot;1&quot;; %&gt;
 &lt;% if (s.path == &quot;will&quot;){ %&gt;
+
+&lt;%= window.story.passage(&quot;Cell&quot;).render() %&gt;
+
 &quot;Y-yes...&quot; You manage to croak out. You barely notice the smirk split the person&#39;s face.
 
 &quot;Excellent. Bag them up.&quot; They order as they stand up. Soon, you feel two pairs of hands prop you up before a bag is rudely shoved over your head. You wince as you feel something prick your arm.
@@ -2025,7 +2022,9 @@ Melissa path goes here
 &lt;%} %&gt;
 
 
-&lt;%= window.story.passage(&quot;END&quot;).render() %&gt;</tw-passagedata><tw-passagedata pid="37" name="Flashforward." tags="" position="2500,400" size="100,100">*Rain again...* You wonder for millionth time, numb to the sensation of water droplets soaking through your clothes.
+&lt;%= window.story.passage(&quot;END&quot;).render() %&gt;</tw-passagedata><tw-passagedata pid="37" name="Flashforward." tags="" position="2500,400" size="100,100">&lt;%= window.story.passage(&quot;Rain&quot;).render() %&gt;
+
+*Rain again...* You wonder for millionth time, numb to the sensation of water droplets soaking through your clothes.
 
 You had felt so hopeful on that day. Yes, you had woken up in an unfamiliar city, but you were confident in finding out where you were... but it was all just baseless conviction.
 
@@ -2062,7 +2061,7 @@ You get a sudden, almost primal urge to look up towards the sky. Once you do, a 
 
 The first sense that comes back is not vision, but smell. A torrent of putrid smells assaults your nose. It is a mixture of ash and burning flesh, something akin to that time you had seen a building on fire, but amplified a hundredfold.
 
-You suddenly don&#39;t want to see where you are. You don&#39;twant to see what your brain regretably associated with these smells. But, despite your apprehension, you gradually make out the dark grey clouds of smoke overhead.
+You suddenly don&#39;t want to see where you are. You don&#39;t want to see what your brain regretably associated with these smells. But, despite your apprehension, you gradually make out the dark grey clouds of smoke overhead.
 
 ...You can&#39;t help but shiver at the sight of the sunset barely being able to peek through. You try to fool yourself by looking at the landscape around you, but the taste of the foul air tickling your lips tells you more than enough; From here to the horizon, everywhere as far as your eyes could see, there was nothing but destruction and ruin.
 
@@ -2086,6 +2085,9 @@ Thank you for playing! Please send this code to the developpers : &lt;%= s.log %
 s.path = &quot;mel&quot;;
 s.log = &quot;M&quot;;
 %&gt;
+
+&lt;%= window.story.passage(&quot;Meadow&quot;).render() %&gt;
+
 It comes from deep within you. Starting with a deep, shaky breath that betrays your apprehension, you tense your muscles and let out a mighty roar. You close your eyes, let yourself go and crying out at the top of your lungs.
 
 You let out one, and two, and three screams of frustration before you can yell no longer, but as you stop to catch your breath, you hear the distinct sound of glass shattering. This startles you out of your pseudo-trance, making you snap your eyes open.
@@ -2125,7 +2127,49 @@ body{
 }
 &lt;/style&gt;</tw-passagedata><tw-passagedata pid="44" name="FireWorks" tags="" position="2350,100" size="100,100">&lt;style&gt;
 body{
-    background-image: url(&quot;https://iili.io/FMQ9GR.png&quot;);
+    background-image: url(&quot;https://iili.io/Fvmgp9.png&quot;);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="45" name="Meadow" tags="" position="2499.3333435058594,101.66666666666674" size="100,100">&lt;style&gt;
+body{
+    background-image: url(&quot;https://iili.io/FvtRbs.png&quot;);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="46" name="Building" tags="" position="2651.666666666667,100.00000000000006" size="100,100">&lt;style&gt;
+body{
+    background-image: url(&quot;https://iili.io/FSFgOx.png&quot;);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="47" name="Rain" tags="" position="2795,101.66666666666674" size="100,100">&lt;style&gt;
+body{
+    background-image: url(&quot;https://iili.io/FS5Ddv.png&quot;);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="48" name="Pentagon" tags="" position="2942.0000203450522,99.99999999999993" size="100,100">&lt;style&gt;
+body{
+    background-image: url(&quot;https://iili.io/FSGiLQ.png&quot;);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="49" name="Cell" tags="" position="3087.0000203450522,100" size="100,100">&lt;style&gt;
+body{
+    background-image: url(&quot;https://iili.io/FSt9g2.png&quot;);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="50" name="Cabin" tags="" position="3235.3333536783857,101.66666666666674" size="100,100">&lt;style&gt;
+body{
+    background-image: url(&quot;https://iili.io/FU7ydJ.png&quot;);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100%;
