@@ -262,7 +262,8 @@ You...
 
 [[Loot it.]] [[Don&#39;t loot it.]]
 
-&lt;% } else { %&gt; 
+&lt;% } else { %&gt;
+
 You decide to ignore the sounds coming from beyond the meadow and instead take off after the rabbit. Whatever&#39;s making those sounds, wolves or whatever they may be, are just bad news. You&#39;d be crazy to want to get closer when you have no idea where you are in the first place.
 
 With that in mind, you regretfully leave the meadow behind and start walking in the direction the rabbit took off. You can&#39;t see it hopping around anymore, but there seems to be a thin trail snaking through the vegetation that you can just about fit into.
@@ -301,10 +302,7 @@ You...
 
 [[Take one|Loot it.]] [[Don&#39;t take one.|Don&#39;t loot it.]]
 
-&lt;%} %&gt;
-
-
-</tw-passagedata><tw-passagedata pid="5" name="Join in." tags="" position="600,500" size="100,100">&lt;% s.log = s.log + &quot;1&quot;; %&gt;
+&lt;%} %&gt;</tw-passagedata><tw-passagedata pid="5" name="Join in." tags="" position="600,500" size="100,100">&lt;% s.log = s.log + &quot;1&quot;; %&gt;
 &lt;% if (s.path == &quot;will&quot;){ %&gt;
 You decide to throw caution to the wind and just jump in. You embrace your fellow human beings with joy and start cheerfully shouting with them.
 
@@ -869,7 +867,7 @@ Stuck between a rock and a hard place, you try to see the light at the end of th
 
 Should you run now and take a chance..? Or wait...?
 
-[[Refuse to dismiss this chance and run.|Refuse and run to the crowd.]] [Reconsider and wait.[Reconsider.]]
+[[Refuse to dismiss this chance and run.|Refuse and run to the crowd.]] [[Reconsider and wait.|Reconsider.]]
 
 &lt;%} %&gt;
 
@@ -907,6 +905,9 @@ After a few minutes of walking, you all arrive at an inconspicuous grated door t
 Well, it&#39;s either the smiles or the firearms piled up on the table, each spotless and seemingly ready to use.
 
 &lt;% } else { %&gt; 
+
+&lt;%= window.story.passage(&quot;Log-cabin&quot;).render() %&gt;
+
 You shrug and decide to follow her. She&#39;s been nothing but pleasant to you so far, if a little overly talkative, so you can&#39;t think of any reason why placing your bets on her would come back to bite you later down the line.
 
 After about half an hour of walking, you both emerge into a meadow not unlike the one you first woke up in. It&#39;s a lot larger and is less colorful overall, but it has the same peaceful atmosphere that would make even the most hardcore of nature-haters stop and appreciate.
@@ -1037,7 +1038,7 @@ Death came instantly.
 &lt;%} %&gt;
 
 
-&lt;%= window.story.passage(&quot;END&quot;).render() %&gt;</tw-passagedata><tw-passagedata pid="19" name="Reconsider." tags="" position="1600,900" size="100,100">&lt;% s.log = s.log + &quot;2&quot;; %&gt;
+&lt;%= window.story.passage(&quot;END&quot;).render() %&gt;</tw-passagedata><tw-passagedata pid="19" name="Reconsider." tags="" position="1598.3333333333333,900" size="100,100">&lt;% s.log = s.log + &quot;2&quot;; %&gt;
 &lt;% if (s.path == &quot;will&quot;){ %&gt;
 You agree to hear him out and quickly fall in line behind the diminutive man as he cracks open a door you hadn&#39;t noticed. You both enter the apartment building without a sound. The sounds of the veritable fanfare of chaotic partygoing fades to a dull white noise behind you.
 
@@ -1218,6 +1219,9 @@ You try to ask for details, but all of them remain tight-lipped, refusing to div
 You...
 
 &lt;% } else { %&gt; 
+
+&lt;%= window.story.passage(&quot;Meadow-moonlight&quot;).render() %&gt;
+
 You can&#39;t think of betraying your only companion, your little friend that stayed by your side as you were fighting against the effects of that mushroom. Some people might think you stupid for not taking advantage of easily accessible game, but you can&#39;t bring yourself to do it.
 
 You slowly fall unconscious as you see the other wild rabbits gather around you in curiosity. You close your eyes, breathing shakily.
@@ -1775,6 +1779,9 @@ What!? You roar in your mind. You bounce to your feet and grab the scientist by 
 You...
 
 &lt;% } else { %&gt; 
+
+&lt;%= window.story.passage(&quot;Cell&quot;).render() %&gt;
+
 &quot;Excellent.&quot; You hear the hunter whisper as they put a bag over your head and  prop you over their shoulder. The bag is inconsequential, however, as you&#39;re sure you wouldn&#39;t be able to make out where you&#39;re heading while in this condition.
 
 After what seems like hours, but could also be minutes, you feel the hunter stop and put you back on the ground. Not removing the bag on your head, he instead throws something at you. You wrap your hands around it and gasp hoarsely.
@@ -2173,6 +2180,20 @@ body{
 &lt;/style&gt;</tw-passagedata><tw-passagedata pid="50" name="Cabin" tags="" position="3235,101" size="100,100">&lt;style&gt;
 body{
     background-image: url(&quot;https://iili.io/FU7ydJ.png&quot;);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="51" name="Meadow-moonlight" tags="" position="3382.333374023438,101.6666666666667" size="100,100">&lt;style&gt;
+body{
+    background-image: url(&quot;https://iili.io/FZG65G.png&quot;);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="52" name="Log-cabin" tags="" position="3524.6666463216147,101.66666666666663" size="100,100">&lt;style&gt;
+body{
+    background-image: url(&quot;https://iili.io/Fb2dBt.png&quot;);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100%;
